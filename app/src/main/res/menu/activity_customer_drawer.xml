@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_provider_post"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="New Post" />
+        <item
+            android:id="@+id/nav_customer_view_post"
+            android:icon="@drawable/viewpost"
+            android:title="View Posts" />
+        <item
+            android:id="@+id/nav_customer_cart"
+            android:icon="@drawable/cart"
+            android:title="my Cart" />
+        <item
+            android:id="@+id/nav_provider_products"
+            android:icon="@drawable/readyicon"
+            android:title="myProduct" />
+        <item
+            android:id="@+id/nav_customer_orders"
+            android:icon="@drawable/readyicon"
+            android:title="myOrders" />
+        <item
+            android:id="@+id/nav_provider_cusWaitingRequest"
+            android:icon="@drawable/waitingresponse"
+            android:title="Waiting Requests" />
+        <item
+            android:id="@+id/nav_provider_cusRequest"
+            android:icon="@drawable/myproduct"
+            android:title="In The Kitchen" />
+        <item
+            android:id="@+id/nav_provider_cusReadyRequest"
+            android:icon="@drawable/complted"
+            android:title="Ready Requests" />
+        <item
+            android:id="@+id/nav_provider_soldProducts"
+            android:icon="@drawable/soldicon"
+            android:title="Sold Products" />
+        <item
+            android:id="@+id/nav_driver_cusRequest"
+            android:icon="@drawable/waiting"
+            android:title="Delivery Requests" />
+        <item
+        android:id="@+id/nav_driver_deliveryOnProgress"
+        android:icon="@drawable/deliveryonprogress"
+        android:title="Delivery On Progress" />
+
+        <item
+            android:id="@+id/nav_manager_manageAccounts"
+            android:icon="@drawable/deliveryonprogress"
+            android:title="Manage Accounts" />
+
+        <item
+            android:id="@+id/nav_manager_viewConcerns"
+            android:icon="@drawable/deliveryonprogress"
+            android:title="View Concerns" />
+
+        <item
+            android:id="@+id/nav_manager_sendMessage"
+            android:icon="@drawable/deliveryonprogress"
+            android:title="Send Message" />
+
+        <item
+            android:id="@+id/nav_manager_searchBy"
+            android:icon="@drawable/deliveryonprogress"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_manager_customerConcerns"
+            android:icon="@drawable/chatgroup"
+            android:title="Customer Concerns" />
+
+        <item
+            android:id="@+id/nav_provider_businessHours"
+            android:icon="@drawable/businesshours"
+            android:title="Business Hours" />
+        <item
+            android:id="@+id/nav_driver_previousDelivery"
+            android:icon="@drawable/complted"
+            android:title="Previous Deliveries"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_user_info"
+                android:icon="@drawable/ic_menu_share"
+                android:title="MyInfo" />
+            <item
+                android:id="@+id/nav_concerns"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Concerns" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/common_full_open_on_phone"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

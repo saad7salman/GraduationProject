@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCusMyOders"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imCusOrderImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/appetizer" />
+        <TextView
+            android:id="@+id/tvCusOrderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/imCusOrderImage"
+            android:fontFamily="sans-serif-condensed"
+            android:text="My Order Title"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvCusOrderQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCusOrderTitle"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Quantity"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvCusOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvCusOrderTitle"
+            android:layout_marginRight="10dp"
+            android:text="Date"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvCusOrderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvCusOrderQuantity"
+            android:layout_marginRight="10dp"
+            android:text="Price"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvCusOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCusOrderQuantity"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Status"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvCusOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvCusOrderStatus"
+            android:layout_marginRight="10dp"
+            android:text="Order Number"
+            android:textColor="#000" />
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

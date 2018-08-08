@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.demo.example.sss.capstone.Driver.DriverDeliveryRequest">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/txtDeliveryRequests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:text="Sorry, There are no delivery requests" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDriDelivRqst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

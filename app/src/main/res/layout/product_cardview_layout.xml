@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvProduct"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="295dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_marginBottom="5dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame">
+
+        <TextView
+            android:id="@+id/tvDescCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvMaxQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivImageUrl"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/appetizer" />
+
+        <TextView
+            android:id="@+id/closedTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivImageUrl"
+            android:layout_alignLeft="@id/ivImageUrl"
+            android:layout_alignRight="@id/ivImageUrl"
+            android:layout_alignTop="@id/ivImageUrl"
+            android:background="#B3000000"
+            android:gravity="center"
+            android:text="Closed"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/ivImageUrl"
+            android:text="Product Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvName"
+            android:layout_marginRight="6dp"
+            android:text="Price"
+            android:textAppearance="?android:attr/textAppearanceInverse"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/distanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvEstimationTime"
+            android:layout_marginRight="6dp"
+            android:text="Distance"
+            android:textAppearance="?android:attr/textAppearanceInverse"
+            android:textColor="#000" />
+
+
+        <TextView
+            android:id="@+id/tvEstimationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:text="Estimation Time"
+            android:layout_below="@+id/ivImageUrl"
+            android:textAppearance="?android:attr/textAppearanceInverse"
+            android:textColor="#000" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@android:style/Widget.Holo.Light.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEstimationTime"
+            android:layout_marginLeft="10dp"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCusRev"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_marginBottom="5dp"
+    card_view:cardPreventCornerOverlap="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame">
+
+        <RatingBar
+            android:id="@+id/ratingBarCustomerReview"
+            style="@android:style/Widget.Holo.Light.RatingBar.Small"
+            android:isIndicator="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvByCustomer"
+            android:layout_below="@+id/ratingBarCustomerReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvRevCreatedDate"
+            android:layout_below="@+id/ratingBarCustomerReview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvReviewTxt"
+            android:layout_below="@+id/tvByCustomer"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
